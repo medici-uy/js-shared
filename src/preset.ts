@@ -1,5 +1,7 @@
 import { definePreset } from '@pandacss/dev';
 
+import { rem } from './helpers.js';
+
 export const preset = definePreset({
   presets: ['@pandacss/preset-base'],
   theme: {
@@ -8,6 +10,9 @@ export const preset = definePreset({
         colors: {
           primaryTextOnColor: {
             value: '{colors.white}',
+          },
+          secondaryTextOnColor: {
+            value: 'oklch(90% 0 0)',
           },
           primaryText: {
             value: {
@@ -34,11 +39,36 @@ export const preset = definePreset({
             },
           },
         },
+        sizes: {
+          thickness: {
+            sm: { value: `${rem.f1_16}rem` },
+            md: { value: `${rem.f2_16}rem` },
+            lg: { value: `${rem.f4_16}rem` },
+            xl: { value: `${rem.f6_16}rem` },
+          },
+        },
+        spacing: {
+          generalSideMargin: {
+            value: { base: '{spacing.sm}', md: '{spacing.3xl}' },
+          },
+          extendedSideMargin: {
+            value: { base: '{spacing.sm}', md: '{spacing.md}' },
+          },
+        },
       },
       tokens: {
         colors: {
           white: { value: 'oklch(100% 0 0)' },
           black: { value: 'oklch(0% 0 0)' },
+        },
+        sizes: {
+          mainContentMaxWidth: {
+            xs: { value: '18rem' },
+            sm: { value: '25rem' },
+            md: { value: '35rem' },
+            lg: { value: '62rem' },
+            xl: { value: '80rem' },
+          },
         },
         spacing: {
           '2xs': { value: '0.2rem' },
@@ -89,6 +119,17 @@ export const preset = definePreset({
             overflowX: 'hidden',
             textOverflow: 'ellipsis',
             whiteSpace: 'nowrap',
+          };
+        },
+      },
+      accentUnderline: {
+        className: 'accent-underline',
+        values: { type: 'string' },
+        transform: (value) => {
+          return {
+            textDecorationThickness: value,
+            textDecorationLine: 'underline',
+            textDecorationColor: 'token(colors.accent)',
           };
         },
       },
