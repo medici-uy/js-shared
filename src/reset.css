@@ -1,0 +1,48 @@
+@layer reset {
+  *:where(:not(html, iframe, canvas, img, svg, video) :not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font-family: inherit;
+    line-height: inherit;
+  }
+
+  a {
+    cursor: revert;
+    text-decoration-line: revert;
+  }
+
+  img,
+  svg {
+    max-width: 100%;
+  }
+
+  img,
+  video,
+  canvas {
+    overflow: revert;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  em {
+    font-style: revert;
+  }
+
+  strong {
+    font-weight: revert;
+  }
+}
