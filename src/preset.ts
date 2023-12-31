@@ -89,7 +89,13 @@ export const preset = definePreset({
             },
           },
           divider: {
-            value: '{colors.gray.1}',
+            value: { base: '{colors.gray.1}', _dark: '{colors.gray.1}' },
+          },
+          icon: {
+            value: {
+              base: '{colors.primaryText}',
+              _dark: '{colors.primaryText}',
+            },
           },
         },
         sizes: {
