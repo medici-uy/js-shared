@@ -38,6 +38,31 @@ export const preset = definePreset({
               _dark: 'oklch(10.5% 0.02 252)',
             },
           },
+          primary: {
+            '1': { value: { base: 'oklch(86.8% 0.06 264.5)', _dark: '' } },
+            '2': { value: { base: 'oklch(61.5% 0.20 264.5)', _dark: '' } },
+            '3': {
+              value: {
+                base: 'oklch(45.2% 0.30 264.5)',
+                _dark: 'oklch(58.9% 0.23 264.5)',
+              },
+            },
+            '4': { value: { base: 'oklch(31.2% 0.20 264.5)', _dark: '' } },
+            '5': { value: { base: 'oklch(15.3% 0.09 264.5)', _dark: '' } },
+          },
+          accent: {
+            value: { base: 'oklch(86.4% 0.2 90)', _dark: '' },
+          },
+          gray: {
+            '1': { value: { base: 'oklch(92% 0.004 286)', _dark: '' } },
+            '2': { value: { base: 'oklch(75% 0.014 286)', _dark: '' } },
+            '3': { value: { base: 'oklch(58% 0.025 286)', _dark: '' } },
+            '4': { value: { base: 'oklch(41% 0.016 286)', _dark: '' } },
+            '5': { value: { base: 'oklch(21% 0.006 286)', _dark: '' } },
+          },
+          separator: {
+            value: '{gray.1}',
+          },
         },
         sizes: {
           thickness: {
@@ -99,11 +124,42 @@ export const preset = definePreset({
           lg: { value: '1.2rem' },
           full: { value: '100rem' },
         },
+        durations: {
+          short: { value: '50ms' },
+          md: { value: '200ms' },
+          long: { value: '500ms' },
+        },
       },
       breakpoints: {
         sm: '40em',
         md: '60em',
         lg: '70em',
+      },
+    },
+  },
+  patterns: {
+    extend: {
+      clickableScale: {
+        properties: {
+          scale: { type: 'number' },
+          shadow: { type: 'token', value: 'shadows' },
+        },
+        transform: (props) => {
+          const shadow = props.shadow ?? 'none';
+
+          return {
+            '--scale': props.scale ?? 0.005,
+
+            _hover: {
+              transform: 'scale(calc(1 + var(--scale)))',
+              boxShadow: shadow,
+            },
+            _active: {
+              transform: 'scale(calc(1 - var(--scale)))',
+              boxShadow: 'none',
+            },
+          };
+        },
       },
     },
   },
