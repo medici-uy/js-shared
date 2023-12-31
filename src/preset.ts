@@ -88,7 +88,7 @@ export const preset = definePreset({
               },
             },
           },
-          separator: {
+          divider: {
             value: '{colors.gray.1}',
           },
         },
