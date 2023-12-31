@@ -56,6 +56,99 @@ export const preset = definePreset({
               _dark: 'oklch(76% 0.15 298)',
             },
           },
+          red: {
+            '1': {
+              value: {
+                base: 'oklch(89% 0.06 28)',
+                _dark: 'oklch(24% 0.06 28)',
+              },
+            },
+            '2': {
+              value: {
+                base: 'oklch(70% 0.14 28)',
+                _dark: 'oklch(43% 0.15 28)',
+              },
+            },
+            '3': {
+              value: {
+                base: 'oklch(58% 0.22 28)',
+                _dark: 'oklch(60% 0.18 28)',
+              },
+            },
+            '4': {
+              value: {
+                base: 'oklch(40% 0.15 28)',
+                _dark: 'oklch(71% 0.14 28)',
+              },
+            },
+            '5': {
+              value: {
+                base: 'oklch(20% 0.06 28)',
+                _dark: 'oklch(89% 0.06 28)',
+              },
+            },
+          },
+          yellow: {
+            '1': {
+              value: {
+                base: 'oklch(96% 0.07 98)',
+                _dark: 'oklch(32% 0.06 98)',
+              },
+            },
+            '2': {
+              value: {
+                base: 'oklch(91% 0.15 98)',
+                _dark: 'oklch(62% 0.14 98)',
+              },
+            },
+            '3': {
+              value: { base: 'oklch(85% 0.2 98)', _dark: 'oklch(87% 0.18 98)' },
+            },
+            '4': {
+              value: {
+                base: 'oklch(59% 0.14 98)',
+                _dark: 'oklch(92% 0.15 98)',
+              },
+            },
+            '5': {
+              value: {
+                base: 'oklch(28% 0.06 98)',
+                _dark: 'oklch(96% 0.07 98)',
+              },
+            },
+          },
+          green: {
+            '1': {
+              value: {
+                base: 'oklch(95% 0.06 140)',
+                _dark: 'oklch(30% 0.07 140)',
+              },
+            },
+            '2': {
+              value: {
+                base: 'oklch(86% 0.17 140)',
+                _dark: 'oklch(57% 0.16 140)',
+              },
+            },
+            '3': {
+              value: {
+                base: 'oklch(79% 0.24 140)',
+                _dark: 'oklch(81% 0.2 140)',
+              },
+            },
+            '4': {
+              value: {
+                base: 'oklch(54% 0.16 140)',
+                _dark: 'oklch(87% 0.17 140)',
+              },
+            },
+            '5': {
+              value: {
+                base: 'oklch(26% 0.07 140)',
+                _dark: 'oklch(95% 0.06 140)',
+              },
+            },
+          },
           gray: {
             '1': {
               value: {
