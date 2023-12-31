@@ -51,7 +51,10 @@ export const preset = definePreset({
             '5': { value: { base: 'oklch(15.3% 0.09 264.5)', _dark: '' } },
           },
           accent: {
-            value: { base: 'oklch(86.4% 0.2 90)', _dark: '' },
+            value: {
+              base: 'oklch(86.4% 0.2 90)',
+              _dark: 'oklch(76% 0.15 298)',
+            },
           },
           gray: {
             '1': { value: { base: 'oklch(92% 0.004 286)', _dark: '' } },
@@ -61,7 +64,7 @@ export const preset = definePreset({
             '5': { value: { base: 'oklch(21% 0.006 286)', _dark: '' } },
           },
           separator: {
-            value: '{gray.1}',
+            value: '{colors.gray.1}',
           },
         },
         sizes: {
