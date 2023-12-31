@@ -16,7 +16,7 @@ export const preset = definePreset({
           },
           primaryText: {
             value: {
-              base: 'oklch(17% 0 0)',
+              base: '{colors.base.primaryText}',
               _dark: 'oklch(95% 0 0)',
             },
           },
@@ -43,7 +43,7 @@ export const preset = definePreset({
             '2': { value: { base: 'oklch(61.5% 0.20 264.5)', _dark: '' } },
             '3': {
               value: {
-                base: 'oklch(45.2% 0.30 264.5)',
+                base: '{colors.base.primary.3}',
                 _dark: 'oklch(58.9% 0.23 264.5)',
               },
             },
@@ -152,7 +152,7 @@ export const preset = definePreset({
           gray: {
             '1': {
               value: {
-                base: 'oklch(92% 0.004 286)',
+                base: '{colors.base.gray.1}',
                 _dark: 'oklch(24% 0.006 286)',
               },
             },
@@ -212,6 +212,11 @@ export const preset = definePreset({
         colors: {
           white: { value: 'oklch(100% 0 0)' },
           black: { value: 'oklch(0% 0 0)' },
+          base: {
+            primary: { '3': { value: 'oklch(45.2% 0.30 264.5)' } },
+            gray: { '1': { value: 'oklch(92% 0.004 286)' } },
+            primaryText: { value: 'oklch(17% 0 0)' },
+          },
         },
         sizes: {
           mainContentMaxWidth: {
