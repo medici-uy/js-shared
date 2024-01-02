@@ -248,6 +248,7 @@ export const preset = definePreset({
           lg: { value: '1.2rem' },
           xl: { value: '1.7rem' },
           '2xl': { value: '2.2rem' },
+          '3xl': { value: '3rem' },
         },
         radii: {
           xs: { value: '0.2rem' },
