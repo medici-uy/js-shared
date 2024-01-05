@@ -39,16 +39,36 @@ export const preset = definePreset({
             },
           },
           primary: {
-            '1': { value: { base: 'oklch(86.8% 0.06 264.5)', _dark: '' } },
-            '2': { value: { base: 'oklch(61.5% 0.20 264.5)', _dark: '' } },
+            '1': {
+              value: {
+                base: 'oklch(89% 0.05 263)',
+                _dark: 'oklch(19% 0.07 253)',
+              },
+            },
+            '2': {
+              value: {
+                base: 'oklch(69% 0.16 263)',
+                _dark: 'oklch(37% 0.18 263)',
+              },
+            },
             '3': {
               value: {
                 base: '{colors.base.primary.3}',
-                _dark: 'oklch(58.9% 0.23 264.5)',
+                _dark: 'oklch(60% 0.23 263)',
               },
             },
-            '4': { value: { base: 'oklch(31.2% 0.20 264.5)', _dark: '' } },
-            '5': { value: { base: 'oklch(15.3% 0.09 264.5)', _dark: '' } },
+            '4': {
+              value: {
+                base: 'oklch(37% 0.18 263)',
+                _dark: 'oklch(69% 0.16 263)',
+              },
+            },
+            '5': {
+              value: {
+                base: 'oklch(19% 0.07 253)',
+                _dark: 'oklch(89% 0.05 263)',
+              },
+            },
           },
           accent: {
             value: {
@@ -193,7 +213,7 @@ export const preset = definePreset({
         },
         sizes: {
           thickness: {
-            sm: { value: `${rem.f1_16}rem` },
+            sm: { value: `${rem.f1p5_16}rem` },
             md: { value: `${rem.f2_16}rem` },
             lg: { value: `${rem.f4_16}rem` },
             xl: { value: `${rem.f6_16}rem` },
@@ -213,7 +233,7 @@ export const preset = definePreset({
           white: { value: 'oklch(100% 0 0)' },
           black: { value: 'oklch(0% 0 0)' },
           base: {
-            primary: { '3': { value: 'oklch(45.2% 0.30 264.5)' } },
+            primary: { '3': { value: 'oklch(53% 0.27 263)' } },
             gray: { '1': { value: 'oklch(92% 0.004 286)' } },
             primaryText: { value: 'oklch(17% 0 0)' },
           },
