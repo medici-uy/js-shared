@@ -213,6 +213,7 @@ export const preset = definePreset({
         },
         sizes: {
           thickness: {
+            xs: { value: `${rem.f1_16}rem` },
             sm: { value: `${rem.f1p5_16}rem` },
             md: { value: `${rem.f2_16}rem` },
             lg: { value: `${rem.f4_16}rem` },
