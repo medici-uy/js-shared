@@ -11,17 +11,17 @@
     "test": "node --test"
   },
   "dependencies": {
-    "intl-messageformat": "10.5.8"
+    "intl-messageformat": "10.5.10"
   },
   "peerDependencies": {
-    "@pandacss/dev": ">=0.24.0"
+    "@pandacss/dev": ">=0.28.0"
   },
   "devDependencies": {
-    "@pandacss/dev": "0.23.0",
-    "@swc/cli": "0.1.63",
-    "@swc/core": "1.3.101",
+    "@pandacss/dev": "0.28.0",
+    "@swc/cli": "0.3.0",
+    "@swc/core": "1.3.105",
     "@types/debug": "4.1.12",
-    "prettier": "3.1.1",
+    "prettier": "3.2.4",
     "rimraf": "5.0.5",
     "typescript": "5.3.3"
   },

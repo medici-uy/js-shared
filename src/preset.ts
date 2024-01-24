@@ -211,21 +211,21 @@ export const preset = definePreset({
             },
           },
         },
-        sizes: {
-          thickness: {
-            xs: { value: `${rem.f1_16}rem` },
-            sm: { value: `${rem.f1p5_16}rem` },
-            md: { value: `${rem.f2_16}rem` },
-            lg: { value: `${rem.f4_16}rem` },
-            xl: { value: `${rem.f6_16}rem` },
-          },
-        },
         spacing: {
           generalSideMargin: {
             value: { base: '{spacing.sm}', md: '{spacing.3xl}' },
           },
           extendedSideMargin: {
             value: { base: '{spacing.sm}', md: '{spacing.md}' },
+          },
+        },
+        borders: {
+          divider: {
+            value: {
+              width: '{borderWidths.md}',
+              color: '{colors.divider}',
+              style: 'solid',
+            },
           },
         },
       },
@@ -277,6 +277,13 @@ export const preset = definePreset({
           md: { value: '0.6rem' },
           lg: { value: '1.2rem' },
           full: { value: '100rem' },
+        },
+        borderWidths: {
+          xs: { value: `${rem.f1_16}rem` },
+          sm: { value: `${rem.f1p5_16}rem` },
+          md: { value: `${rem.f2_16}rem` },
+          lg: { value: `${rem.f4_16}rem` },
+          xl: { value: `${rem.f6_16}rem` },
         },
         durations: {
           short: { value: '50ms' },
