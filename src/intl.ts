@@ -3,7 +3,7 @@ import { IntlMessageFormat } from 'intl-messageformat';
 export const locale = 'es';
 
 export function formatUyu(
-  number: number,
+  number: number | bigint | string,
   fractionDigits = 0,
   display = 'narrowSymbol',
 ): string {
@@ -15,17 +15,20 @@ export function formatUyu(
     maximumFractionDigits: fractionDigits,
   });
 
-  return formatter.format(number);
+  return formatter.format(number as any);
 }
 
-export function formatPercentage(number: number, fractionDigits = 0): string {
+export function formatPercentage(
+  number: number | bigint | string,
+  fractionDigits = 0,
+): string {
   const formatter = new Intl.NumberFormat(locale, {
     style: 'percent',
     minimumFractionDigits: fractionDigits,
     maximumFractionDigits: fractionDigits,
   });
 
-  return formatter.format(number);
+  return formatter.format(number as any);
 }
 
 export function formatMessage(
