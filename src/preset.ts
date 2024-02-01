@@ -210,6 +210,9 @@ export const preset = definePreset({
               _dark: '{colors.primaryText}',
             },
           },
+          input: {
+            value: { base: 'oklch(96% 0 0)', _dark: 'oklch(10.5% 0.021 252)' },
+          },
         },
         spacing: {
           generalSideMargin: {
