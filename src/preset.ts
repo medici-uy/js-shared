@@ -330,7 +330,6 @@ export const preset = definePreset({
   utilities: {
     extend: {
       truncate: {
-        className: 'truncate',
         values: { type: 'boolean' },
         transform: (value) => {
           if (!value) return {};
@@ -343,13 +342,12 @@ export const preset = definePreset({
         },
       },
       accentUnderline: {
-        className: 'accent-underline',
-        values: { type: 'string' },
-        transform: (value) => {
+        values: 'borderWidths',
+        transform: (value, { token }) => {
           return {
             textDecorationThickness: value,
             textDecorationLine: 'underline',
-            textDecorationColor: '{colors.accent}',
+            textDecorationColor: token('colors.accent'),
           };
         },
       },
