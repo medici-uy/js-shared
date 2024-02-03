@@ -349,7 +349,7 @@ export const preset = definePreset({
           return {
             textDecorationThickness: value,
             textDecorationLine: 'underline',
-            textDecorationColor: 'token(colors.accent)',
+            textDecorationColor: '{colors.accent}',
           };
         },
       },
