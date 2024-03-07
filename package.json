@@ -3,7 +3,7 @@
   "version": "0.0.19",
   "description": "UI kit for medici.uy",
   "type": "module",
-  "main": "dist/index.js",
+  "exports": "./dist/index.js",
   "scripts": {
     "build": "swc src --out-dir dist --copy-files src/*.css --strip-leading-paths",
     "prebuild": "rimraf dist",
@@ -16,16 +16,16 @@
     "intl-messageformat": "10.5.11"
   },
   "peerDependencies": {
-    "@pandacss/dev": ">=0.33.0"
+    "@pandacss/dev": ">=0.34.0"
   },
   "devDependencies": {
-    "@pandacss/dev": "0.33.0",
+    "@pandacss/dev": "0.34.0",
     "@swc/cli": "0.3.10",
-    "@swc/core": "1.4.2",
+    "@swc/core": "1.4.5",
     "@types/debug": "4.1.12",
     "prettier": "3.2.5",
     "rimraf": "5.0.5",
-    "typescript": "5.3.3"
+    "typescript": "5.4.2"
   },
   "types": "dist/index.d.ts",
   "author": "Diego Stratta <diego@medici.uy>",
