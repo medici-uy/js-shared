@@ -203,6 +203,11 @@ export const preset = definePreset({
           md: { value: '200ms' },
           long: { value: '500ms' },
         },
+        blurs: {
+          sm: { value: '0.1rem' },
+          md: { value: '0.3rem' },
+          lg: { value: '0.6rem' },
+        },
       },
       breakpoints: {
         sm: '40em',
