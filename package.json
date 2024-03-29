@@ -1,6 +1,6 @@
 {
   "name": "@medici-uy/ui",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "UI kit for medici.uy.",
   "type": "module",
   "exports": {
@@ -19,16 +19,16 @@
     "intl-messageformat": "10.5.11"
   },
   "peerDependencies": {
-    "@pandacss/dev": ">=0.34.0"
+    "@pandacss/dev": ">=0.36.1"
   },
   "devDependencies": {
-    "@pandacss/dev": "0.34.0",
+    "@pandacss/dev": "0.36.1",
     "@swc/cli": "0.3.10",
-    "@swc/core": "1.4.5",
+    "@swc/core": "1.4.11",
     "@types/debug": "4.1.12",
     "prettier": "3.2.5",
     "rimraf": "5.0.5",
-    "typescript": "5.4.2"
+    "typescript": "5.4.3"
   },
   "types": "dist/index.d.ts",
   "author": "Diego Stratta <diego@medici.uy>",

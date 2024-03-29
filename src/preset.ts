@@ -15,10 +15,7 @@ export const preset = definePreset({
             value: 'oklch(95% 0 0)',
           },
           primaryText: {
-            value: {
-              base: '{colors.base.primaryText}',
-              _dark: 'oklch(95% 0 0)',
-            },
+            value: 'light-dark({colors.base.primaryText}, oklch(95% 0 0))',
           },
           secondaryText: {
             value: {
@@ -33,10 +30,7 @@ export const preset = definePreset({
             },
           },
           bg: {
-            value: {
-              base: '{colors.white}',
-              _dark: 'oklch(17.5% 0.012 254)',
-            },
+            value: 'light-dark({colors.white}, oklch(17.5% 0.012 254))',
           },
           primary: {
             '1': {
