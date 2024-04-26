@@ -24,14 +24,17 @@
   "devDependencies": {
     "@pandacss/dev": "0.37.2",
     "@swc/cli": "0.3.12",
-    "@swc/core": "1.4.12",
+    "@swc/core": "1.5.0",
     "@types/debug": "4.1.12",
     "prettier": "3.2.5",
     "rimraf": "5.0.5",
-    "typescript": "5.4.4"
+    "typescript": "5.4.5"
   },
   "types": "dist/index.d.ts",
   "author": "Diego Stratta <diego@medici.uy>",
   "repository": "git@github.com:medici-uy/ui.git",
-  "license": "AGPL-3.0-or-later"
+  "license": "AGPL-3.0-or-later",
+  "engines": {
+    "node": ">= 22"
+  }
 }
