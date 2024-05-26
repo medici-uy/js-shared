@@ -16,18 +16,18 @@
     "test:ci": "node --test"
   },
   "dependencies": {
-    "intl-messageformat": "10.5.12"
+    "intl-messageformat": "10.5.14"
   },
   "peerDependencies": {
-    "@pandacss/dev": ">=0.39.0"
+    "@pandacss/dev": ">=0.39.2"
   },
   "devDependencies": {
-    "@pandacss/dev": "0.39.0",
+    "@pandacss/dev": "0.39.2",
     "@swc/cli": "0.3.12",
-    "@swc/core": "1.4.17",
+    "@swc/core": "1.5.7",
     "@types/debug": "4.1.12",
     "prettier": "3.2.5",
-    "rimraf": "5.0.5",
+    "rimraf": "5.0.7",
     "typescript": "5.4.5"
   },
   "types": "dist/index.d.ts",

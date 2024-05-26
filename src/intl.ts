@@ -10,7 +10,7 @@ export function formatUyu(
   const formatter = new Intl.NumberFormat(locale, {
     style: 'currency',
     currency: 'UYU',
-    currencyDisplay: display as any,
+    currencyDisplay: display,
     minimumFractionDigits: fractionDigits,
     maximumFractionDigits: fractionDigits,
   });
