@@ -121,7 +121,16 @@ export const preset = definePreset({
             value: '{colors.primaryText}',
           },
           input: {
-            value: 'light-dark(oklch(96% 0 0), oklch(10.5% 0.021 252))',
+            value: 'light-dark(oklch(96% 0 0), oklch(10% 0.02 252))',
+          },
+          backdropBg: {
+            value: 'light-dark(oklch(0% 0 0 / 0.3), oklch(50% 0 0 / 0.3))',
+          },
+          overBg: {
+            value: '{colors.bg/80}',
+          },
+          secondaryBg: {
+            value: '{colors.input/80}',
           },
         },
         spacing: {
