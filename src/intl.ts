@@ -5,7 +5,7 @@ export const locale = 'es';
 export function formatUyu(
   number: number | bigint | string,
   fractionDigits = 0,
-  display = 'narrowSymbol',
+  display: Intl.NumberFormatOptions['currencyDisplay'] = 'narrowSymbol',
 ): string {
   const formatter = new Intl.NumberFormat(locale, {
     style: 'currency',
@@ -31,10 +31,7 @@ export function formatPercentage(
   return formatter.format(number as any);
 }
 
-export function formatMessage(
-  message: string,
-  values: Record<string, any>,
-): string {
+export function formatMessage(message: string, values: Record<string, any>): string {
   const formatter = new IntlMessageFormat(message, locale);
 
   return formatter.format(values);
