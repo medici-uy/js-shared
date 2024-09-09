@@ -3,6 +3,7 @@ import { definePreset } from '@pandacss/dev';
 import { rem } from './helpers.js';
 
 export const preset = definePreset({
+  name: 'medici',
   presets: ['@pandacss/preset-base'],
   theme: {
     extend: {
