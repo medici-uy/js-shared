@@ -144,11 +144,7 @@ export const preset = definePreset({
         },
         borders: {
           divider: {
-            value: {
-              width: '{borderWidths.md}',
-              color: '{colors.divider}',
-              style: 'solid',
-            },
+            value: '{borderWidths.md} solid {colors.divider}',
           },
         },
       },
