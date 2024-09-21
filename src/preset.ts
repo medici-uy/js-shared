@@ -29,7 +29,7 @@ export const preset = definePreset({
           },
           primary: {
             '1': {
-              value: 'light-dark(oklch(89% 0.05 263), oklch(19% 0.07 253))',
+              value: 'light-dark(oklch(89% 0.05 263), oklch(25% 0.10 263))',
             },
             '2': {
               value: 'light-dark(oklch(69% 0.16 263), oklch(37% 0.18 263))',
@@ -41,7 +41,7 @@ export const preset = definePreset({
               value: 'light-dark(oklch(37% 0.18 263), oklch(69% 0.16 263))',
             },
             '5': {
-              value: 'light-dark(oklch(19% 0.07 253), oklch(89% 0.05 263))',
+              value: 'light-dark(oklch(25% 0.10 263), oklch(89% 0.05 263))',
             },
           },
           accent: {
