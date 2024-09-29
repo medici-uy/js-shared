@@ -49,8 +49,4 @@
   strong {
     font-weight: revert;
   }
-
-  :where(dialog:modal) {
-    all: revert;
-  }
 }
