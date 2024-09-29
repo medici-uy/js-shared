@@ -1,5 +1,7 @@
 @layer reset {
-  *:where(:not(html, iframe, canvas, img, svg, video) :not(svg *, symbol *)) {
+  *:where(
+      :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
+    ) {
     all: unset;
     display: revert;
   }
@@ -31,10 +33,12 @@
   img,
   video,
   canvas {
-    overflow: revert;
+    overflow: hidden;
   }
 
-  ul {
+  ul,
+  ol,
+  menu {
     list-style: none;
   }
 
@@ -44,5 +48,9 @@
 
   strong {
     font-weight: revert;
+  }
+
+  :where(dialog:modal) {
+    all: revert;
   }
 }
