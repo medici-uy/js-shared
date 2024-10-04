@@ -190,6 +190,7 @@ export const preset = definePreset({
           sm: { value: '0.3rem' },
           md: { value: '0.6rem' },
           lg: { value: '1.2rem' },
+          xl: { value: '2.2rem' },
           full: { value: '100rem' },
         },
         borderWidths: {
