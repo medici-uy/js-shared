@@ -24,15 +24,18 @@ export const preset = definePreset({
           tertiaryText: {
             value: 'light-dark(oklch(54% 0 0), oklch(70% 0 0))',
           },
+          lightBg: {
+            value: 'oklch(99% 0.008 80)',
+          },
           darkBg: {
             value: 'oklch(17.5% 0.012 254)',
           },
           bg: {
-            value: 'light-dark(oklch(99% 0.004 80), {colors.darkBg})',
+            value: 'light-dark({colors.lightBg}, {colors.darkBg})',
           },
           card: {
             value:
-              'light-dark({colors.white}, oklch(from {colors.darkBg} calc(l * 1.15) c h))',
+              'light-dark(oklch(from {colors.lightBg} 100% calc(c / 2) h), oklch(from {colors.darkBg} calc(l * 1.15) c h))',
           },
           primary: {
             '1': {
