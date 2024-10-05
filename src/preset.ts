@@ -35,7 +35,7 @@ export const preset = definePreset({
           },
           card: {
             value:
-              'light-dark(oklch(from {colors.lightBg} 100% calc(c / 2) h), oklch(from {colors.darkBg} calc(l * 1.15) c h))',
+              'light-dark(oklch(from {colors.lightBg} 100% calc(c * 0.5) h), oklch(from {colors.darkBg} calc(l * 1.15) c h))',
           },
           primary: {
             '1': {
