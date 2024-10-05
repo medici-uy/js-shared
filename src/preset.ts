@@ -25,7 +25,7 @@ export const preset = definePreset({
             value: 'light-dark(oklch(54% 0 0), oklch(70% 0 0))',
           },
           lightBg: {
-            value: 'oklch(99% 0.008 80)',
+            value: 'oklch(99% 0.006 80)',
           },
           darkBg: {
             value: 'oklch(17.5% 0.012 254)',
