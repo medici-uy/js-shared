@@ -199,6 +199,7 @@ export const preset = definePreset({
           md: { value: `${rem.f2_16}rem` },
           lg: { value: `${rem.f4_16}rem` },
           xl: { value: `${rem.f6_16}rem` },
+          '2xl': { value: `${rem.f8_16}rem` },
         },
         durations: {
           short: { value: '50ms' },
