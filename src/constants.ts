@@ -4,3 +4,4 @@ export const primaryColorHex = {
 };
 
 export const appDisplayName = 'medici';
+export const appDescription = 'El banco de preguntas de la FMED Udelar.';
