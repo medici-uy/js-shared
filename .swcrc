@@ -1,11 +1,11 @@
 {
-  "$schema": "https://swc.rs/schema.json",
-  "jsc": {
-    "parser": {
-      "syntax": "typescript"
-    },
-    "target": "esnext"
-  },
-  "sourceMaps": true,
-  "minify": true
+	"$schema": "https://swc.rs/schema.json",
+	"jsc": {
+		"parser": {
+			"syntax": "typescript"
+		},
+		"target": "esnext"
+	},
+	"sourceMaps": true,
+	"minify": true
 }

@@ -1,12 +1,12 @@
-import { test } from 'node:test';
-import assert from 'node:assert/strict';
+import assert from "node:assert/strict";
+import { test } from "node:test";
 
-import { preset } from './preset.js';
+import { preset } from "./preset.js";
 
-test('preset exists', async () => {
-  assert(
-    typeof preset === 'object' &&
-      preset !== null &&
-      typeof preset.theme === 'object',
-  );
+test("preset exists", async () => {
+	assert(
+		typeof preset === "object" &&
+			preset !== null &&
+			typeof preset.theme === "object",
+	);
 });
