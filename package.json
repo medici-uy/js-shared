@@ -11,11 +11,10 @@
 		"build": "swc src --out-dir dist --copy-files src/*.css --strip-leading-paths",
 		"prebuild": "rm --recursive --force dist && npm run check",
 		"postbuild": "tsc",
-		"test": "node --test",
+		"test": "node --test ./dist",
 		"check": "biome check --write",
 		"tsc": "tsc --noEmit",
-		"pretest": "npm run build",
-		"test:ci": "node --test"
+		"pretest": "npm run build"
 	},
 	"peerDependencies": {
 		"@pandacss/dev": ">=0.53.0"

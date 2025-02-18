@@ -35,7 +35,7 @@ jobs:
         run: npm run build
 
       - name: Test
-        run: npm run test:ci
+        run: npm run test
 
       - name: Release
         run: npm publish --access public
