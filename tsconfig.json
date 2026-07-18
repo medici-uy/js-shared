@@ -1,11 +1,10 @@
 {
+	"extends": "@tsconfig/strictest/tsconfig.json",
 	"compilerOptions": {
 		"module": "NodeNext",
 		"moduleResolution": "NodeNext",
-		"strict": true,
 		"target": "ESNext",
 		"removeComments": true,
-		"esModuleInterop": true,
 		"resolveJsonModule": true,
 		"sourceMap": true,
 		"emitDeclarationOnly": true,
@@ -15,15 +14,11 @@
 		"checkJs": true,
 		"noErrorTruncation": true,
 		"forceConsistentCasingInFileNames": true,
-		"noImplicitReturns": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"noFallthroughCasesInSwitch": true,
-		"skipLibCheck": true,
-		"experimentalDecorators": true,
-		"emitDecoratorMetadata": true,
 		"allowImportingTsExtensions": true,
-		"useUnknownInCatchVariables": true
+		"useUnknownInCatchVariables": true,
+		"noPropertyAccessFromIndexSignature": false,
+		"rootDir": ".",
+		"types": ["node"]
 	},
 	"include": ["src/**/*"],
 	"exclude": ["node_modules", "dist"]
