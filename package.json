@@ -1,6 +1,6 @@
 {
 	"name": "@medici-uy/js-shared",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"description": "JS shared utils for medici.uy.",
 	"type": "module",
 	"exports": {
