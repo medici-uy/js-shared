@@ -1,6 +1,6 @@
 {
 	"name": "@medici-uy/js-shared",
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"description": "JS shared utils for medici.uy.",
 	"type": "module",
 	"exports": {
@@ -17,16 +17,16 @@
 		"pretest": "npm run build"
 	},
 	"peerDependencies": {
-		"@pandacss/dev": ">=1.11.4"
+		"@pandacss/dev": ">=2.2.0"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.5.4",
-		"@pandacss/dev": "1.11.4",
+		"@biomejs/biome": "2.5.15",
+		"@pandacss/dev": "2.2.0",
 		"@swc/cli": "0.8.1",
-		"@swc/core": "1.15.43",
+		"@swc/core": "1.16.18",
 		"@tsconfig/strictest": "2.0.8",
 		"@types/debug": "4.1.13",
-		"@types/node": "26.1.1",
+		"@types/node": "26.6.5",
 		"typescript": "7.0.2"
 	},
 	"types": "dist/index.d.ts",
@@ -34,6 +34,6 @@
 	"repository": "git@github.com:medici-uy/js-shared.git",
 	"license": "AGPL-3.0-or-later",
 	"engines": {
-		"node": ">= 26.4.0"
+		"node": ">= 26.12.0"
 	}
 }
