@@ -1,10 +1,11 @@
 import { definePreset } from "@pandacss/dev";
+import basePreset from "@pandacss/preset-base";
 
 import { rem } from "./helpers.js";
 
 export const preset = definePreset({
 	name: "medici",
-	presets: ["@pandacss/preset-base"],
+	presets: [basePreset],
 	theme: {
 		extend: {
 			semanticTokens: {
