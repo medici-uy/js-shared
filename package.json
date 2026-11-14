@@ -1,6 +1,6 @@
 {
 	"name": "@medici-uy/js-shared",
-	"version": "0.1.7",
+	"version": "0.1.8",
 	"description": "JS shared utils for medici.uy.",
 	"type": "module",
 	"exports": {
@@ -17,17 +17,17 @@
 		"pretest": "npm run build"
 	},
 	"dependencies": {
-		"@pandacss/preset-base": "2.4.0"
+		"@pandacss/preset-base": "2.5.0"
 	},
 	"peerDependencies": {
-		"@pandacss/dev": ">=2.4.0"
+		"@pandacss/dev": ">=2.5.0"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.6.4",
-		"@pandacss/dev": "2.4.0",
+		"@biomejs/biome": "2.6.7",
+		"@pandacss/dev": "2.5.0",
 		"@swc/cli": "0.8.2",
-		"@swc/core": "1.16.20",
-		"@tsconfig/strictest": "2.0.8",
+		"@swc/core": "1.16.22",
+		"@tsconfig/strictest": "2.0.9",
 		"@types/debug": "4.1.13",
 		"@types/node": "26.6.6",
 		"typescript": "7.0.2"
